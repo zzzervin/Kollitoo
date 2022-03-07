@@ -8,7 +8,7 @@ namespace Kollitoo
     {
         int korgus;
         int laius;
-
+        Tuup tuup;
      
 
         public int Korgus
@@ -28,7 +28,26 @@ namespace Kollitoo
             get { return laius; }
         }
 
-        
+        public string Figura
+        {
+            get
+            {
+                var figura = "";
+                if (Korgus==Laius)
+                {
+                    figura = "ruud";
+                }
+                else
+                {
+                    figura = "ristkülik";
+                }
+                return figura;
+            }
+        }
+
+
+
+
 
         public void Umbermoot()
         {
@@ -44,6 +63,7 @@ namespace Kollitoo
             int b = laius;
             int c = (a * b) ;
             Console.WriteLine($"Minu pindala on {c} ");
+            Console.WriteLine($"Se on {Figura} ");
         }
     }
 }

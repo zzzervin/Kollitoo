@@ -5,8 +5,6 @@ namespace Kollitoo
     class Program
     {
 
-
-
         static void Main(string[] args)
         {
             Nelinurk a = new Nelinurk();
@@ -17,5 +15,6 @@ namespace Kollitoo
             a.Pindala();
         }
         
+
     }
 }
